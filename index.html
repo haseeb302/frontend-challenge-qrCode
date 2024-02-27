@@ -9,6 +9,7 @@
     <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css" />
 
@@ -18,14 +19,102 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Title of the Page -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {},
+        },
+        plugins: [require("@tailwindcss/aspect-ratio")],
+      };
+    </script>
     <title>Front End Challenges</title>
   </head>
   <body class="bg-slate-300 font-['Rubik']">
-    <main class="flex flex-row justify-center h-screen">
-      <a href="qr-code/index.html">qr-code challenge</a>
-      <a href="recipe-page/index.html">recipe page challenge</a>
-    </main>
+    <div>
+      <div class="bg-white">
+        <div
+          class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+        >
+          <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+            Frontend Mentor Challenges
+          </h2>
+
+          <div
+            class="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8"
+          >
+            <div class="group relative">
+              <div
+                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80"
+              >
+                <img
+                  src="./qr-code/qr.png"
+                  alt="Front of men&#039;s Basic Tee in black."
+                  class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>
+              <div class="mt-4 flex justify-between">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="./qr-code/index.html">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      QR Code Challenge
+                    </a>
+                  </h3>
+                  <div>
+                    <span
+                      class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+                      >TailwindCSS</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+                      >Flexbox</span
+                    >
+                  </div>
+                  <span
+                    class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10"
+                    >Figma</span
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="group relative">
+              <div
+                class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80"
+              >
+                <img
+                  src="./recipe-page/assets/images/image-omelette.jpeg"
+                  class="h-full w-full object-cover object-center lg:h-full lg:w-full"
+                />
+              </div>
+              <div class="mt-4 flex justify-between">
+                <div>
+                  <h3 class="text-sm text-gray-700">
+                    <a href="./recipe-page/index.html">
+                      <span aria-hidden="true" class="absolute inset-0"></span>
+                      Recipe Page Challenge
+                    </a>
+                  </h3>
+                  <div>
+                    <span
+                      class="inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600 ring-1 ring-inset ring-gray-500/10"
+                      >TailwindCSS</span
+                    >
+                    <span
+                      class="inline-flex items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20"
+                      >Flexbox</span
+                    >
+                  </div>
+                  <span
+                    class="inline-flex items-center rounded-md bg-red-50 px-2 py-1 text-xs font-medium text-red-700 ring-1 ring-inset ring-red-600/10"
+                    >Figma</span
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- More products... -->
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

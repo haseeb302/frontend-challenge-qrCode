@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @font-face {
+        font-family: Fraunces-VariableFont_SOFT;
+        src: url("./starter-code/assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+      }
+      @font-face {
+        font-family: Fraunces_144pt-SemiBold;
+        src: url("./starter-code/assets/fonts/fraunces/static/Fraunces_144pt-SemiBold.ttf");
+      }
+      @font-face {
+        font-family: Manrope-VariableFont_wght;
+        src: url("./starter-code/assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+      }
+      h1,
+      h3,
+      span {
+        font-family: Fraunces_144pt-SemiBold;
+      }
+      p {
+        font-family: Manrope-VariableFont_wght;
+      }
+    </style>
+    <title>Frontend Mentor | Workit landing page</title>
+  </head>
+  <body>
+    <section class="h-[730px] bg-[#24053E]">
+      <nav class="flex justify-between px-24 py-10">
+        <div>
+          <img src="./starter-code/assets/images/logo-light.svg" />
+        </div>
+        <a href="#" class="text-white border-b-2 border-[#44FFA1]"
+          >Apply for access</a
+        >
+      </nav>
+      <div class="grid grid-cols-4">
+        <div class="col-span-1">
+          <img
+            src="./starter-code/assets/images/bg-pattern-1.svg"
+            class="absolute -left-36"
+          />
+        </div>
+        <div class="col-span-2 my-16 mx-12 text-center">
+          <h1 class="text-white text-[80px] leading-tight">
+            Data <span class="border-b-2 border-[#44FFA1]">tailored</span> to
+            your needs.
+          </h1>
+          <button class="p-4 bg-[#44FFA1] mt-5">Learn more</button>
+          <img
+            src="./starter-code/assets/images/image-hero.webp"
+            class="mt-[50px]"
+          />
+        </div>
+        <div class="col-span-1">
+          <img
+            src="./starter-code/assets/images/bg-pattern-2.svg"
+            class="absolute -right-14 bottom-20"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="h-[750px] bg-[#FCF8FF]">
+      <div class="flex gap-5 px-24 items-center text-center pt-[255px]">
+        <div class="flex-1">
+          <div class="flex justify-center">
+            <div
+              class="w-14 h-14 border-[1px] border-[#584D62] rounded-full align-middle leading-[52px]"
+            >
+              <span class="text-[24px] text-[#24053E]">1</span>
+            </div>
+          </div>
+
+          <h3 class="text-[32px] text-[#24053E] mt-[56px] mb-[28px]">
+            Actionable insights
+          </h3>
+          <p class="leading-8 px-10">
+            Optimize your products, improve customer satisfaction and stay ahead
+            of the competition with our product data analytics.
+          </p>
+        </div>
+        <div class="flex-1">
+          <div class="flex justify-center">
+            <div
+              class="w-14 h-14 border-[1px] border-[#584D62] rounded-full align-middle leading-[52px]"
+            >
+              <span class="text-[24px] text-[#24053E]">2</span>
+            </div>
+          </div>
+          <h3 class="text-[32px] text-[#24053E] mt-[56px] mb-[28px]">
+            Data-driven decisions
+          </h3>
+          <p class="leading-8 px-10">
+            Make data-driven decisions with our product data analytics. Our
+            AI-generated reports help you unlock insights hidden in your product
+            data.
+          </p>
+        </div>
+        <div class="flex-1">
+          <div class="flex justify-center">
+            <div
+              class="w-14 h-14 border-[1px] border-[#584D62] rounded-full align-middle leading-[52px]"
+            >
+              <span class="text-[24px] text-[#24053E]">3</span>
+            </div>
+          </div>
+          <h3 class="text-[32px] text-[#24053E] mt-[56px] mb-[28px]">
+            Always affordable
+          </h3>
+          <p class="leading-8 px-10">
+            Always affordable pricing that scales with your business. Get
+            top-quality product data analytics services without hidden costs or
+            unexpected fees.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-[110px]">
+      <div class="flex justify-center">
+        <div>
+          <img
+            src="./starter-code/assets/images/image-founder.webp"
+            class="w-[477px] h-[477px] absolute left-24 -z-10"
+          />
+          <div class="bg-[#24053E] w-[730px] mt-[200px] p-16 ml-44 relative">
+            <h3 class="text-white text-[56px]">Be the first to test</h3>
+            <p class="text-white leading-8 text-[18px]">
+              Hi, I'm Louis Graham, the founder of the company. Book a demo call
+              with me to become a beta tester for our app and kickstart your
+              company. Apply for access below and I’ll be in touch to schedule a
+              call.
+            </p>
+            <button class="p-4 bg-[#44FFA1] mt-5">Apply for access</button>
+            <img
+              src="./starter-code/assets/images/bg-pattern-3.svg"
+              class="absolute right-14 -bottom-20"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="flex justify-center mt-[120px]">
+      <div>
+        <img src="./starter-code/assets/images/logo-dark.svg" />
+        <div class="flex my-16 justify-around">
+          <img src="./starter-code/assets/images/icon-facebook.svg" />
+          <img src="./starter-code/assets/images/icon-twitter.svg" />
+          <img src="./starter-code/assets/images/icon-instagram.svg" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

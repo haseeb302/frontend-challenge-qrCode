@@ -1,0 +1,17 @@
+.bg-1 {
+  background-image: url("./assets/desktop/image-hero-left.png");
+  /* background-size: 394px 303px; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 380px;
+  background-position-x: -50px;
+}
+
+.bg-2 {
+  background-image: url("./assets/desktop/image-hero-right.png");
+  /* background-size: 394px 303px; */
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 380px;
+  background-position-x: 50px;
+}
